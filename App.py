@@ -25,13 +25,13 @@ def HomePage():
 
     col1, col2 = st.beta_columns(2)
     with col1:
-        demo_img_file_path = 'images/Robert.png'
+        demo_img_file_path = 'Images/Robert.png'
         demo_image = np.array(Image.open(demo_img_file_path))
         demo_image = cv2.resize(demo_image,(300,400))
         st.image(demo_image,caption="Demo Image1")
     
     with col2:
-        demo_img_file_path = 'images/chris.png'
+        demo_img_file_path = 'Images/chris.png'
         demo_image = np.array(Image.open(demo_img_file_path))
         demo_image = cv2.resize(demo_image,(300,400))
         st.image(demo_image,caption="Demo Image2")
@@ -53,7 +53,7 @@ def HomePage():
 
         with col4:
             st.subheader("GrayScale Image")
-            demo_gray_img = Image.open('images/GrayScale_Img.png')
+            demo_gray_img = Image.open('Images/GrayScale_Img.png')
             st.image(demo_gray_img)
 
     expander_face_detection = st.beta_expander(label='Face Detection')
