@@ -15,7 +15,7 @@ import face_recognition     ## --- Face Recognition Library (Face Recognition Ma
 
 def HomePage():
     st.header("Image Manipulation using OpenCv - Python")
-    st.subheader("Excited to experience the magic of OpenCV??")
+    st.subheader("Excited to experience the magic of OpenCV???")
     st.subheader("Let's Get Started!!!")
     #st.text("Scroll Down..")
 
