@@ -165,11 +165,11 @@ def SelfieSegmentation(option,choice,image):
 
     #Background Image
     if option == 'Nature':
-        bg_img_file_path  = 'images/Nature.jpg'
+        bg_img_file_path  = 'Images/Nature.jpg'
         Bg_Image = np.array(Image.open(bg_img_file_path))
 
     elif option == 'Resort':
-        bg_img_file_path  = 'images/Resort.jpg'
+        bg_img_file_path  = 'Images/Resort.jpg'
         Bg_Image = np.array(Image.open(bg_img_file_path))
 
     elif option == 'Colors':
@@ -323,7 +323,7 @@ elif add_selectbox == 'Face Detection':
         st.image(output_image)
 
 
-elif add_selectbox == 'Face Meshing':
+elif add_selectbox == 'Face Mesh':
     st.header("Face Meshing from an image")
     st.write("The Face Mesh will be rendered for the face detected in an image.")
     st.subheader('To know more about the Face Mesh technique, Check out the Home Page!!')
