@@ -53,7 +53,7 @@ def HomePage():
 
         with col4:
             st.subheader("GrayScale Image")
-            demo_gray_img = Image.open('Images/GrayScale_Img.png')
+            demo_gray_img = Image.open('Images/Grayscale_Img.png')
             st.image(demo_gray_img)
 
     expander_face_detection = st.beta_expander(label='Face Detection')
