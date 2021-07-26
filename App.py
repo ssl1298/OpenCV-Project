@@ -46,34 +46,125 @@ def HomePage():
         st.subheader("Example: Selection - GrayScale")
         #st.subheader("Selection - GrayScale")
 
-        col3,col4 = st.beta_columns(2)
-        with col3:
+        col1,col2 = st.beta_columns(2)
+        with col1:
             st.subheader("Original Image")
             st.image(demo_image)
 
-        with col4:
+        with col2:
             st.subheader("GrayScale Image")
             demo_gray_img = Image.open('Images/Grayscale_Img.png')
             st.image(demo_gray_img)
 
     expander_face_detection = st.beta_expander(label='Face Detection')
     with expander_face_detection:
-        st.subheader("Will be Updated Soon!!")
+        
+        st.header("Face Detection Brief:")
+        st.write("The face in the image will be detected and landmarks will be rendered.")
+        st.write("The model detects the face using major six landmarks.")
+        st.write("1.Left Eye 2. Right Eye 3. Nose 4. Left Ear 5. Right Ear 6. Mouth")
+        st.subheader("Example: Original Image vs Image with detected Face Landmarks")
+
+        col1,col2 = st.beta_columns(2)
+        with col1:
+            st.subheader("Original Image")
+            st.image(demo_image)
+
+        with col2:
+            st.subheader("Face Detection Landmarks Image")
+            demo_fd_img = Image.open('Images/FaceDetect_Img.jpeg')
+            st.image(demo_fd_img)
 
 
     expander_face_mesh = st.beta_expander(label='Face Mesh')
     with expander_face_mesh:
-        st.subheader("Will be Updated Soon!!")
+        
+        st.header("Face Mesh Brief:")
+        st.write("The face in the image will be detected and mesh will be rendered using the landmarks connnection.")
+        st.write("The model detects the face using major six landmarks.")
+        st.write("1.Left Eye 2. Right Eye 3. Nose 4. Left Ear 5. Right Ear 6. Mouth")
+        st.write("Then the connections are formed between these six landmarks.")
+        st.subheader("Example: Original Image vs Image with Face Mesh")
+
+        col1,col2 = st.beta_columns(2)
+        with col1:
+            st.subheader("Original Image")
+            st.image(demo_image)
+
+        with col2:
+            st.subheader("Face Mesh Image")
+            demo_fm_img = Image.open('Images/FaceMesh_Img.jpeg')
+            st.image(demo_fm_img)
 
 
     expander_selfie_segmentation = st.beta_expander(label='Selfie Segmentation')
     with expander_selfie_segmentation:
-        st.subheader("Will be Updated Soon!!")
+        
+        st.header("Selfie Segmentation Brief:")
+        st.write("The image will be processed to get the segmentation mask from the picture.")
+        st.write("It seprates the segmented mask from the actual image.")
+        st.write("After removing the noise data from the mask, it will be blended with the background image selected.")
+        st.subheader("Example: Selection - Background color as Green")
+
+        col1,col2 = st.beta_columns(2)
+        with col1:
+            st.subheader("Original Image")
+            st.image(demo_image)
+
+        with col2:
+            st.subheader("Image with Green Background")
+            demo_ss_img = Image.open('Images/SS_Green_Img.jpeg')
+            st.image(demo_ss_img)
 
     expander_face_recognition = st.beta_expander(label='Face Recognition')
     with expander_face_recognition:
-        st.subheader("Will be Updated Soon!!")
+        
+        st.header("Face Recognition Brief:")
+        st.write("Here, minimum of two images are considered for Face Recognition Model.")
+        st.write("One image is for training the model with the known face by giving the input as known face and known face name.")
+        st.write("Other image is for testing the mode trained to recognise the face from its known faces list.")
+        st.subheader("Example: Face Recognition of known face - CHRIS")
+        st.subheader("Scenario:1")
 
+        col1,col2,col3 = st.beta_columns(3)
+        with col1:
+            st.subheader("Train Image")
+            st.image(demo_image)
+        
+        with col2:
+            demo_img_file_path = 'Images/Chris.jpg'
+            demo_test_image = np.array(Image.open(demo_img_file_path))
+            demo_test_image = cv2.resize(demo_test_image,(300,400))
+            st.subheader("Test Image")
+            #demo_test_img = Image.open('Images/Chris.jpg')
+            st.image(demo_test_image)
+
+        with col3:
+            st.subheader("Model Result")
+            demo_ss_img = Image.open('Images/FaceRecog_Img.jpeg')
+            st.image(demo_ss_img)
+
+        st.subheader("Scenario:2")
+
+        col4,col5,col6 = st.beta_columns(3)
+        with col4:
+            st.subheader("Train Image")
+            st.image(demo_image)
+        
+        with col5:
+            demo_img_file_path = 'Images/Robert.png'
+            demo_test_image = np.array(Image.open(demo_img_file_path))
+            demo_test_image = cv2.resize(demo_test_image,(300,400))
+            st.subheader("Test Image")
+            #demo_test_img = Image.open('Images/Chris.jpg')
+            st.image(demo_test_image)
+
+        with col6:
+            st.subheader("Model Result")
+            demo_ss_img = Image.open('Images/FaceRecog_Img2.jpeg')
+            st.image(demo_ss_img)
+        
+        st.write("In the Second scenario, as model can only recognise one Face:CHRIS, so the test image resulted as Unknown!!")
 #-----------------------------------------------------------------------------------------------------------------#
 #-----------------------------------------------------------------------------------------------------------------#
 
