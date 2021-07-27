@@ -30,7 +30,7 @@ You can always check out the Repository files for your reference:
 ------> This application is basically developed on streamlit- the better source for building up the Anaytics applications.
 ------> Then OpenCV library of python for performing CV related operations.
 
->>> Requirements.txt, Procfile, setup.sh files : for deploying the application on Heroku Platform
+>>> requirements.txt, Procfile, setup.sh files : for deploying the application on Heroku Platform
 
 *******************************************************************************************************************************
 Environmental Setup:
