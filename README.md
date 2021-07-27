@@ -40,11 +40,15 @@ Environmental Setup:
 3. Prefer to work on Virtual Environment for your specific application:: this helps in better management of Application setups
 4. Install the libraries under the virtual environment using pip [pip install <libray_name>]
   i.    streamlit 
+  
   ii.   opencv-python
+  
   iii.  mediapipe
+  
   iv.   cmake
+  
   v.    dlib
-  vi.   face_recognition
+  
  
 5. Having Git Bash and Heroku CLI would make things easy
 
