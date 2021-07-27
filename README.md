@@ -39,6 +39,7 @@ Environmental Setup:
 2. Editor: VS-Code
 3. Prefer to work on Virtual Environment for your specific application:: this helps in better management of Application setups
 4. Install the libraries under the virtual environment using pip [pip install <libray_name>]
+  
   i.    streamlit 
   
   ii.   opencv-python
