@@ -11,14 +11,13 @@ Being a newbie in OpenCV python Library, building some application practically w
 ***************************************************************************************************************************
 
 Application Brief: @ http://computer-vision-world.herokuapp.com/
-##################
+
 Web Application : using Streamlit
 Deployment Cloud Platform : Heroku
 Programming Language : Python
 
 *****************************************************************************************************************************
 Repository Brief:
-#################
 
 You can run the application which is hosted using the HEROKU Platform @ http://computer-vision-world.herokuapp.com/
 It consists of Home Page which displays the brief introduction about the available options.
@@ -35,7 +34,6 @@ You can always check out the Repository files for your reference:
 
 *******************************************************************************************************************************
 Environmental Setup:
-#####################
 
 1. Programming Language: Python
 2. Editor: VS-Code
@@ -52,7 +50,6 @@ Environmental Setup:
 
 ********************************************************************************************************************************
 References:
-############
 
 Python Installation : https://www.python.org/downloads/
 
@@ -60,24 +57,37 @@ VS-Code Installation : https://code.visualstudio.com/download
 
 Virtual Environment Setup : https://www.geeksforgeeks.org/creating-python-virtual-environment-windows-linux/
 >>> cd <path_for_creating_app_in_loca_sys[E:\Project\]>
+
 >>> pip install virtualenv
+
 >>> virtualenv <env_name>
+
 >>> cd .\<env_name>\
+
 >>> ls
+
 >>> cd Scripts
+
 >>> .\activate
 
 Libraries Installation on Virtual Environment: https://www.youtube.com/watch?v=xaDJ5xnc8dc
 >>> pip install opencv-python
+
 >>> pip install streamlit
+
 >>> pip install mediapipe
+
 >>> pip install cmake
+
 >>> pip install dlib ---- would take longer time to install[be patient]
 
 ----- Check all the libraries are installed successfully
 >>> import cv2
+
 >>> import streamlit as st
+
 >>> import mediapipe as mp
+
 >>> import face_recognition ---- to check the installtion of cmake and dlib
 
 Deploying Streamlit Application on Heroku Platform: https://towardsdatascience.com/a-quick-tutorial-on-how-to-deploy-your-streamlit-app-to-heroku-874e1250dadd
