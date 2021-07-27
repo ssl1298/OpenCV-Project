@@ -60,6 +60,10 @@ Python Installation : https://www.python.org/downloads/
 
 VS-Code Installation : https://code.visualstudio.com/download
 
+Git Bash Installation : https://git-scm.com/downloads
+
+Heroku CLI Installtion : https://devcenter.heroku.com/articles/heroku-cli
+
 Virtual Environment Setup : https://www.geeksforgeeks.org/creating-python-virtual-environment-windows-linux/
 >>> cd <path_for_creating_app_in_loca_sys[E:\Project\]>
 
@@ -96,6 +100,8 @@ Libraries Installation on Virtual Environment: https://www.youtube.com/watch?v=x
 >>> import face_recognition ---- to check the installtion of cmake and dlib
 
 Deploying Streamlit Application on Heroku Platform: https://towardsdatascience.com/a-quick-tutorial-on-how-to-deploy-your-streamlit-app-to-heroku-874e1250dadd
+
+ 
 
 *********************************************************************************************************************
 Resources:
